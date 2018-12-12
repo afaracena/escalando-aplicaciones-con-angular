@@ -41,11 +41,11 @@
     <mat-checkbox [(ngModel)]="formModel.rememberMe" name="rememberMe">Recuérdame</mat-checkbox>
     {{formModel | json}}
 
-      <button mat-button color="primary">
+      <button mat-button color="primary" name="button1">
         <mat-icon>lock_open</mat-icon> Login
       </button>
 
-      <a routerLink="/register" mat-button role="button">
+      <a routerLink="/register" mat-button role="button" name="button2">
         <mat-icon>how_to_reg</mat-icon> Register
       </a>
 

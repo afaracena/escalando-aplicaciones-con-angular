@@ -2,7 +2,8 @@ import { browser, by, element } from 'protractor';
 
 export class AppPage {
   selectors = {
-    'title' : 'app-root h1'
+    'title' : 'app-root h1',
+    'card-titles' : 'mat-card-title'
   };
 
   navigateTo() {
@@ -12,4 +13,10 @@ export class AppPage {
   getTitleText() {
     return element(by.css(this.selectors['title'])).getText();
   }
+
+
+  getCardTitle() {
+    return element.all(by.css(this.selectors['card-titles']));
+  }
+
 }
